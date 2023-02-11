@@ -1,0 +1,1 @@
+[Fri Feb 10 21:36:01.382247 2023] [autoindex:error] [pid 72857] [client 192.168.2.142:61760] AH01276: Cannot serve directory /srv/users/kafdgrrj/rxeavbk-m1/public/img/: No matching DirectoryIndex (index.html,index.cgi,index.pl,index.php,index.xhtml,index.htm) found, and server-generated directory index forbidden by Options directive, referer: http://rxeavbk-m1.wsr.ru/public/
