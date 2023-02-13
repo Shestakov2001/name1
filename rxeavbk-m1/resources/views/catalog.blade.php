@@ -27,7 +27,7 @@
                     <div><img src="/public/img/{{$p->photo}}" alt=""class="img-fluid"></div>
                         <p>{{$p->name}}</p>
                         <p>{{$p->price}}</p>
-                    @guest else <a href="/public/product/{{$p->id}}">Купи</a>@endguest
+                    @guest @else <button class="cupi" href="/public/product/{{$p->id}}">Купи</button>@endguest
                 </div>
             @endforeach
         </div>

@@ -28,6 +28,8 @@
     color: #14b7db;
 }
 
+/*catalog.blade*/
+
 #filter
 {
     color: #F89C21;
@@ -50,3 +52,38 @@
 #category:hover{      
     color: #14b7db;
 }
+
+.cupi{
+    background-color: black; 
+    color: #F89C21;
+    text-decoration: none;
+    
+}
+
+.cupi:hover{
+    color: #14b7db;
+}
+
+/*catalog.blade*/
+
+/*home.blade*/
+
+.card-header{
+    background: black!important;
+    color: #F89C21!important;
+}
+
+.card-header:hover{
+    color: #14b7db!important;
+}
+
+.card-body{
+    background: gray;
+    color: #F89C21!important;
+}
+
+.card-body:hover{
+    color: #14b7db!important;
+}
+
+/*home.blade*/
