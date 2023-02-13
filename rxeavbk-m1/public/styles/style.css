@@ -1,0 +1,52 @@
+.bg-green
+{
+    background-color: black!important;
+}
+
+.navbar li {
+    padding: 15px;
+    margin: 15px;
+}
+.navbar li a:hover{ 
+    color: #14b7db;
+}
+
+.navbar a{
+    color: #F89C21;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.potis button{
+    background-color: black; 
+    color: #F89C21;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.potis button:hover{
+    color: #14b7db;
+}
+
+#filter
+{
+    color: #F89C21;
+    background-color:black;
+    font-size:15px;
+    
+}
+
+#filter:hover{      
+    color: #14b7db;
+}
+
+#category
+{
+    color: #F89C21;
+    background-color:black;
+    font-size:15px;
+}
+
+#category:hover{      
+    color: #14b7db;
+}

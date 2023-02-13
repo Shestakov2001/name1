@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        <div class="potis">
         <h1>Каталог</h1>
             <form action="public/catalog">
                 <select name="filter" id="filter">
@@ -20,15 +21,16 @@
             <button type="submit">Применить</button>
             </form>
 
-    <div class="row">
-        @foreach($products as $p)
-            <div class="col-lg-4">
-                <div><img src="/public/img/{{$p->photo}}" alt=""class="img-fluid"></div>
-                    <p>{{$p->name}}</p>
-                    <p>{{$p->price}}</p>
-                @guest else <a href="/public/product/{{$p->id}}">Купи</a>@endguest
-            </div>
-        @endforeach
+        <div class="row">
+            @foreach($products as $p)
+                <div class="col-lg-4">
+                    <div><img src="/public/img/{{$p->photo}}" alt=""class="img-fluid"></div>
+                        <p>{{$p->name}}</p>
+                        <p>{{$p->price}}</p>
+                    @guest else <a href="/public/product/{{$p->id}}">Купи</a>@endguest
+                </div>
+            @endforeach
+        </div>
     </div>
 </div>
 @endsection

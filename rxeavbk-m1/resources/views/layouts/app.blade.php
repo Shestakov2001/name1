@@ -9,20 +9,20 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <link rell="stylesheet" type="text/css" href="resources/css/app.css">
+   
    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/style.css') }}">
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md shadow-sm bg-green">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="/public/img/printerLogo.png" width="60px" height="60px" alt="">
@@ -33,9 +33,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <li> <a href="/public/catalog">Каталог</a></li>
-                    <ul class="navbar-nav me-auto">
+                    
 
+                    <ul class="navbar-nav me-auto">
+                        <li> <a href="/public/catalog">Каталог</a></li>
+                        <li> <a href="/public/about">О нас</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
