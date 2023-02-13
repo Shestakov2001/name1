@@ -86,4 +86,28 @@
     color: #14b7db!important;
 }
 
+.col-lg-4{
+    background: white;
+}
 /*home.blade*/
+
+/*app.blade*/
+
+.dropdown-menu{
+    color: #14b7db!important;
+    background: gray!important;
+}
+
+.dropdown-item{
+    background: gray!important;
+}
+
+/*app.blade*/
+
+/*welcome.blade*/
+
+.logocontainer{
+    
+}
+
+/*welcome.blade*/

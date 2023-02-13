@@ -37,10 +37,10 @@
             @endif
 
          
-            <div class="container">
+            <div class="logocontainer">
                 <div class="logos">
                     <img src="/public/img/logo.png" width="360px" height="360px">
-                    <p>У нас лучшие игры</p>
+                    <p>Распечатай новый лист своей жизни</p>
                 </div>
             </div>
 
