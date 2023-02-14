@@ -4,7 +4,7 @@
     <div class="container">
         <div class="potis">
         <h1>Каталог</h1>
-            <form action="public/catalog">
+            <form action="/public/catalog">
                 <select name="filter" id="filter">
                     <option value ="created_at">Новизна</option>
                     <option value ="price">Цена</option>
