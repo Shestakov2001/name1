@@ -63,6 +63,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a href="/public/cart" class="dropdown-item">Корзина</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -87,4 +88,16 @@
 
     
 </body>
+
+<footer>
+
+    
+        <div class="container">
+
+            <div class="noga"><img class="logofooter" src="/public/img/printerLogo.png"></div>
+        </div>
+    
+
+</footer>
+
 </html>

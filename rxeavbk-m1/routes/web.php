@@ -22,3 +22,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/catalog', [App\Http\Controllers\ProductController::class, 'index']);
 
 Route::get('/product/{id}', [App\Http\Controllers\ProductController::class, 'product']);
+
+Route::get('/cart', [App\Http\Controllers\CartController::class, 'show']);
+
+Route::get('/cart/add/{id}', [App\Http\Controllers\CartController::class, 'add']);
+
+Route::get('/cart/minus/{id}', [App\Http\Controllers\CartController::class, 'minus']);
+
+Route::get('/cart/plus/{id}', [App\Http\Controllers\CartController::class, 'plus']);
+
+Route::get('/cart/pay/{id}', [App\Http\Controllers\CartController::class, 'pay']);

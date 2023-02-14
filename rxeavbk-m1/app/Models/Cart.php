@@ -12,19 +12,20 @@ class Cart extends Model
     protected $table = "carts";
 
     protected $fillable=[
-        "id",
-        "id_buscet",
-        "id_user",
-        "id_product",
+        'id',
+        'id_buscet',
+        'id_user',
+        'id_product',
+        'count',
         'created_at',
         'updated_at',
     ];
 
-    public function user(){
+    public function User(){
         return $this->hasOne(User::class,'id','id_user');
     }
 
-    public function product(){
+    public function Product(){
         return $this->hasOne(Product::class,'id','id_product');
     }
 }

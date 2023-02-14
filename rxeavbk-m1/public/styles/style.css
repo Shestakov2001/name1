@@ -102,12 +102,28 @@
     background: gray!important;
 }
 
+footer{
+    background-color: #14011C;
+    
+    
+}
+
+.logofooter{
+    margin-top: 50px;
+    
+    height: 80px;
+    width: 80px;
+    
+}
+.noga
+{
+    display: flex;
+    justify-content: flex-end;
+}
 /*app.blade*/
 
 /*welcome.blade*/
 
-.logocontainer{
-    
-}
+
 
 /*welcome.blade*/
