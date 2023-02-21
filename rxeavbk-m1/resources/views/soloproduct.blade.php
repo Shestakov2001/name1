@@ -2,34 +2,44 @@
 
 @section('content')
 
-    <div class="container d-flex w-100">
+    <div class="container d-flex">
 
-        <div class="cards_solo">
+            <div class="cards_solo">
 
-            <img src="/public/img/{{$p->photo}}" alt=""class="catimg_solo img-fluid">
+                <img src="/public/img/{{$p->photo}}" alt="" class="catimg_solo img-fluid">
+
+                    
+            </div>
+            
+            <div class="right">
 
                 <div class="cardsinfo">
-                    
-                    <p class="pros_name">{{$p->name}}</p>
+                            
+                    <div><p class="pros_name">{{$p->name}}</p></div>
 
-                    <p class="pros_price">{{$p->price}} руб.</p>
+                    <div><p class="pros_price">{{$p->price}} руб.</p></div>
 
-                    <button class="btn btn-succes">Купить</button>
+                    <button class="cupi">Купить</button>
 
                 </div>
-        </div>
-        
-        <div class="character">
 
-            <p class="pros">Харакетристики товара:</p>
+                <br>
+                
+                <br>
 
-            <p class="pros">Страна:{{$p->country}}</p>
+                <div class="character">
+                    
 
-            <p class="pros">Модель:{{$p->model}}</p>
+                    <p class="pros">Харакетристики товара:</p>
 
-            <p class="pros">Год выпуска:{{$p->year}}</p>
+                    <p class="pros">Страна:{{$p->country}}</p>
 
-        </div>
+                    <p class="pros">Модель:{{$p->model}}</p>
 
+                    <p class="pros">Год выпуска:{{$p->year}}</p>
+
+                </div>
+            </div>
     </div>
+
 @endsection

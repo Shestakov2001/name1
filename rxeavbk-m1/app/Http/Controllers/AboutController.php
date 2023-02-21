@@ -8,7 +8,8 @@ use App\Models\Product;
 class AboutController extends Controller
 {
     public function index(){
-    $Products = Product::latest()->limit(5)->get();
-    return view("welcome", ["Products" => $Products]);
+    // $Products = Product::latest()->limit(5)->get();
+    $Products = Product::ORDERBY('id','DESC')->LIMIT(5)->get();
+    return view("about", ["Products" => $Products]);
     }
 }

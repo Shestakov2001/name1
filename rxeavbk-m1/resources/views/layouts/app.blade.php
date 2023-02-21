@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-md shadow-sm bg-green">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="/public/img/printerLogo.png" width="60px" height="60px" alt="">
+                    <img src="/public/img/logo.png" width="60px" height="60px" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -38,6 +38,7 @@
                     <ul class="navbar-nav me-auto">
                         <li> <a href="/public/catalog">Каталог</a></li>
                         <li> <a href="/public/about">О нас</a></li>
+                        <li> <a href="/public/where">Где нас найти</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

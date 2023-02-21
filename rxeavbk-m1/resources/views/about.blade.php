@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="logos">
                     <img src="/public/img/logo.png" width="360px" height="360px">
-                    <p>У нас лучшие игры</p>
+                    <h1>У нас лучшие игры</h1>
                 </div>
             </div>
 
@@ -22,15 +22,15 @@
                     @foreach($Products as $prod)
                         @if($loop->index == 0)
                             <div class="carousel-item active">
-                                <img src="/public/img/{{ $prod->photo}}" class="d-block w-100" alt="...">
+                                <img src="/public/img/{{ $prod->photo}}" class="d-block " alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>{{ $prod->name}}</h5>
                                     <p>{{$prod->price}}</p>
                                 </div>
                             </div>
                             @else
-                            <div class="carousel-item active">
-                                <img src="/public/img/{{ $prod->photo}}" class="d-block w-100" alt="...">
+                            <div class="carousel-item">
+                                <img src="/public/img/{{ $prod->photo}}" class="d-block " alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>{{ $prod->name}}</h5>
                                     <p>{{$prod->price}}</p>
