@@ -64,6 +64,36 @@
     color: #14b7db;
 }
 
+.pifo{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bordercard{
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10%;
+    width:  300px!important;
+    background: #bad989!important;
+}
+
+.imgcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.imgcard img{
+    border-radius: 15%;
+}
+.ifot{
+    width: 200px;
+}
+
+
+
 /*catalog.blade*/
 
 /*home.blade*/
@@ -102,24 +132,6 @@
     background: gray!important;
 }
 
-footer{
-    background-color: #14011C;
-    
-    
-}
-
-.logofooter{
-    margin-top: 50px;
-    
-    height: 80px;
-    width: 80px;
-    
-}
-.noga
-{
-    display: flex;
-    justify-content: flex-end;
-}
 /*app.blade*/
 
 /*welcome.blade*/
@@ -127,3 +139,14 @@ footer{
 
 
 /*welcome.blade*/
+
+/*soloproduct.blade*/
+
+.cards_solo{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+/*soloproduct.blade*/

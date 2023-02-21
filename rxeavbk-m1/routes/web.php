@@ -23,6 +23,8 @@ Route::get('/catalog', [App\Http\Controllers\ProductController::class, 'index'])
 
 Route::get('/product/{id}', [App\Http\Controllers\ProductController::class, 'product']);
 
+Route::get('/soloproduct/{id}', [App\Http\Controllers\SoloController::class, 'soloproduct']);
+
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'show']);
 
 Route::get('/cart/add/{id}', [App\Http\Controllers\CartController::class, 'add']);

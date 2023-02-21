@@ -21,15 +21,24 @@
             <button type="submit">Применить</button>
             </form>
 
-        <div class="row">
+        <div class="container">
+            <div class="pifo">
             @foreach($products as $p)
-                <div class="col-lg-4">
-                    <div><img src="/public/img/{{$p->photo}}" alt=""class="img-fluid"></div>
-                        <p>{{$p->name}}</p>
-                        <p>{{$p->price}}</p>
-                    @guest @else <button class="cupi" href="/public/product/{{$p->id}}">Купи</button>@endguest
+                <div class="bordercard col-lg-4 p-3">
+                    <div class="imgcard">
+                        <a href="/public/soloproduct/{{ $p->id }}">
+                            <img src="/public/img/{{$p->photo}}" alt=""class="ifot img-fluid">
+                        </a>
+                    </div>
+                    <div class="infocard ps-4 d-flex justify-content-around">
+                        <p class="m-0">{{$p->name}}</p>
+                        <p class="m-0">{{$p->price}}</p>
+                        @guest @else <button class="cupi" href="/public/product/{{$p->id}}">Купи</button>@endguest
+                    </div>
+                    
                 </div>
             @endforeach
+            </div>
         </div>
     </div>
 </div>

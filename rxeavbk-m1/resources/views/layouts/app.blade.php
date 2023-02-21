@@ -89,15 +89,6 @@
     
 </body>
 
-<footer>
 
-    
-        <div class="container">
-
-            <div class="noga"><img class="logofooter" src="/public/img/printerLogo.png"></div>
-        </div>
-    
-
-</footer>
 
 </html>
