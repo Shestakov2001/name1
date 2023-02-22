@@ -9,8 +9,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-   
-   
+
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-md shadow-sm bg-green">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="/public/img/logo.png" width="60px" height="60px" alt="">
+                    <img src="/public/img/logo.png" width="60px" height="60px" alt="/public/about">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    
+
 
                     <ul class="navbar-nav me-auto">
                         <li> <a href="/public/catalog">Каталог</a></li>
@@ -57,7 +57,7 @@
                                 </li>
                             @endif
                         @else
-                        
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->login }}
@@ -87,7 +87,7 @@
         </main>
     </div>
 
-    
+
 </body>
 
 
