@@ -1,6 +1,6 @@
 .bg-green
 {
-    background-color: black!important;
+    background-color: rgb(37, 11, 44)!important;
 }
 
 body{
@@ -224,12 +224,20 @@ body{
 .wheremap{
     border: 5px solid black;
     border-radius: 30px;
+    width: 850px;
+    overflow: hidden;
 }
 
 .wheremap img{
-    width: 950px;
-    height: 700px;
-    border-radius: 30px;
+    border-radius: 25px;
+    max-width: 100%;
+    outline: 1px solid black;
+}
+
+.wheremap img:hover{
+    width: 850px;
+    transform: scale(1.5, 1.5);
+    transition: 1s;
 }
 
 .contacts{
