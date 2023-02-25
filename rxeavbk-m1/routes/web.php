@@ -36,5 +36,6 @@ Route::get('/cart/plus/{id}', [App\Http\Controllers\CartController::class, 'plus
 
 Route::get('/cart/pay/{id}', [App\Http\Controllers\CartController::class, 'pay']);
 
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
 
 Route::view('/where','where')->name('where');

@@ -13,9 +13,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
+
                     @if ( Auth::user()->role == 2 )
-                    <a href="/public/admin">adminka</a>
+                        <a href="/admin">adminka</a>
                     @endif
+
                     {{ __('You are logged in!') }}
                 </div>
             </div>

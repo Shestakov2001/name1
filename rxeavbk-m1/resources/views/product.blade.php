@@ -5,8 +5,16 @@
         <h1>{{$product->name}}</h1>
         <div class="d-flex">
             <img src="/public/img/{{$product->photo}}" alt="">
+         
+            @if($product->Category->name)
             <p>{{$product->Category->name}}</p>
-            <a href="/public/cart/add/{{$product->id}}">Купи2</a>
+            @else
+            <p>{{$product->name}}</p>
+            
+            @endif
+          
+
+            <a href="/public/cart/add/{{$product->id}}">В корзину</a>
         </div>
     </div>
 @endsection

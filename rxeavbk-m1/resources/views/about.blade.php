@@ -1,12 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="container">
+
         <h1>О нас</h1>
+
         <div class="logos">
+
             <img src="/public/img/logo.png" width="360px" height="360px">
-            <h1>Распечатай новый лист своей жизни</h1>
+
         </div>
+
+        <br>
+
+        <div class="logosh">
+
+            <h1>Распечатай новый лист своей жизни</h1>
+            
+        </div>
+
     </div>
 
     <div class="container">

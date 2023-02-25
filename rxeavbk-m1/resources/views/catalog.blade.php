@@ -33,7 +33,7 @@
                     <div class="infocard ps-4 d-flex justify-content-around">
                         <p class="m-0">{{$p->name}}</p>
                         <p class="m-0">{{$p->price}} руб.</p>
-                        @guest @else <button class="cupi" href="/public/product/{{$p->id}}">Купить</button>@endguest
+                        @guest @else <a href="/public/product/{{$p->id}}"><button class="cupi" >Купить</button></a>@endguest
                     </div>
                     
                 </div>
