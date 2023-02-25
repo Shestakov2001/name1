@@ -328,14 +328,32 @@ body{
 
 /*cart.blade*/
 
+.cartbp{
+    background-color: #b1e064;
+    border: 3px solid black;
+}
 .cartname{
-    
+   width: 100px;
+   height: 20px;
 }
 
-
 .cartname p{
-    color: #14b7db;
+    color: #F89C21;
     background: black;
+    width: 100px;
+}
+
+.cartminpl a{
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /*cart.blade*/
+
+/*admin.blade*/
+
+.input-group form{
+    display: flex;
+}
+
+/*admin.blade*/

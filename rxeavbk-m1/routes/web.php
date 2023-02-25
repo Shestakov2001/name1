@@ -38,4 +38,8 @@ Route::get('/cart/pay/{id}', [App\Http\Controllers\CartController::class, 'pay']
 
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
 
+Route::post('/admin/create_category', [App\Http\Controllers\AdminController::class, 'create_category'])->name('create_cat');
+
+Route::post('/admin/create_product', [App\Http\Controllers\AdminController::class, 'create_product'])->name('create_prod');
+
 Route::view('/where','where')->name('where');
