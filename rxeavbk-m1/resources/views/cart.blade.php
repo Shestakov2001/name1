@@ -5,18 +5,20 @@
     <div class="container">
 
         <h1>Корзина</h1>
-        
+
         <div class ="cartbp">
 
             @foreach($carts as $c)
-            
+
             <div class ="cartname">
 
                 <p>{{$c->Product->name}}</p>
-                
+
             </div>
 
             <div class = "cartcount">
+
+                <p>{{$c->Product->model}}</p>
 
                 <p>{{$c->count}}</p>
 
@@ -41,7 +43,7 @@
             </div>
 
             @if($carts->count() > 0)<a href="/public/cart/pay/{{$carts[0]->id_buscet}}">Оформить</a>@endif
-    
+
     </div>
 
 @endsection

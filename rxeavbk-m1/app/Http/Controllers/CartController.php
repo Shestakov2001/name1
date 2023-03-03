@@ -32,7 +32,7 @@ class CartController extends Controller
 
             $bufferif[0] -> save();
         }
-        
+
         return redirect('/product/'.$id);
     }
 
@@ -53,10 +53,11 @@ class CartController extends Controller
         $cart->count--;
         if($cart->count == 0){
             $cart->delete();
+            return redirect('/cart');
         }
         else{
             $cart->save();
+            return redirect('/cart');
         }
-        return redirect('/сart');
     }
 }

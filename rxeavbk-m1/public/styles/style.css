@@ -154,12 +154,6 @@ body{
 
 /*app.blade*/
 
-/*welcome.blade*/
-
-
-
-/*welcome.blade*/
-
 /*soloproduct.blade*/
 
 .cards_solo{
@@ -259,7 +253,7 @@ body{
 /*about.blade*/
 
 .logos{
-
+    margin-left: 430px;
     width: 430px;
     display: flex;
     flex-direction: column;

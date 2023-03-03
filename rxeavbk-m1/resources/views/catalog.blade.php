@@ -4,6 +4,8 @@
     <div class="container">
         <div class="potis">
         <h1>Каталог</h1>
+
+            
             <form action="/public/catalog">
                 <select name="filter" id="filter">
                     <option value ="created_at">Новизна</option>
@@ -19,7 +21,10 @@
                 </select>
 
             <button type="submit">Применить</button>
+
             </form>
+
+            <a href="/public/catalog"> <button>Сбросить фильтры</button></a>
 
         <div class="container">
             <div class="pifo">
@@ -35,7 +40,7 @@
                         <p class="m-0">{{$p->price}} руб.</p>
                         @guest @else <a href="/public/product/{{$p->id}}"><button class="cupi" >Купить</button></a>@endguest
                     </div>
-                    
+
                 </div>
             @endforeach
             </div>
