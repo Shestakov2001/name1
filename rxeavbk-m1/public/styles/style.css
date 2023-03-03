@@ -350,4 +350,11 @@ body{
     display: flex;
 }
 
+.admincontainer p{
+    background: black;
+    color: #F89C21;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+}
 /*admin.blade*/

@@ -13,7 +13,7 @@ class ProductController extends Controller
 
         else {
              $products = \App\Models\Product::orderBy($req->filter, "desc")->where('id_cat',$req->category)->get();
-        
+
         }
 
         $category = \App\Models\Category::all();

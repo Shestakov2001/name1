@@ -11,10 +11,10 @@
 
             <div class="admincontainer">
 
-                <p>Добавить категорию товара</p>
+                <h2>Добавить категорию товара</h2>
 
                     <div class="input-group mb-3">
-            
+
                         <form action="/public/admin/create_category" method="post" enctype="multipart/form-data">@csrf
                             <input type="text" class="form-control" placeholder="name" name="name" required>
                             <input type="submit">
@@ -22,10 +22,20 @@
 
                     </div>
 
-                <p>Добавить товар</p>
+                    <h2>Удалить категорию</h2>
+
+                    <div class="delcat">
+
+                        @foreach($category as $c)
+                            <p>{{$c->name}}</p><a href="/public/admin/delete/{{$c->id}}">Удалить</a>
+                        @endforeach
+
+                    </div>
+                    
+                <h2>Добавить товар</h2>
 
                     <div class="input-group mb-3">
-                    
+
                         <form action="/public/admin/create_product" method="post" enctype="multipart/form-data">@csrf
                             <input type="text" class="form-control" placeholder="name" name="name" required>
                             <input type="text" class="form-control" placeholder="photo" name="photo" required>
@@ -39,7 +49,24 @@
                         </form>
 
                     </div>
+
+                        
+
+                        <h2>Товар</h2>
+
+                    <div class="delpro">
+
+                        @foreach($product as $p)
+                            <p>{{$p->name}}</p><a href="/public/admin/deletep/{{$p->id}}">Удалить</a>
+
+                            <a href="/public/admin/redtov/{{$p->id}}">Редактировать</a>
+                        @endforeach
+
+                    </div>
+
+                    
             </div>
+
     @endif
 
 </div>

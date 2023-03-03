@@ -38,6 +38,14 @@ Route::get('/cart/pay/{id}', [App\Http\Controllers\CartController::class, 'pay']
 
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
 
+Route::get('/admin/delete/{id}', [App\Http\Controllers\AdminController::class, 'delete_category'])->name('delete_cat');
+
+Route::get('/admin/deletep/{id}', [App\Http\Controllers\AdminController::class, 'delete_product'])->name('delete_prod');
+
+Route::get('/admin/redtov/{id}', [App\Http\Controllers\AdminController::class, 'red_tov'])->name('red_tov');
+
+Route::post('/admin/redtovsubmit/{id}', [App\Http\Controllers\AdminController::class, 'red_tov_submit'])->name('red_tov_submit');
+
 Route::post('/admin/create_category', [App\Http\Controllers\AdminController::class, 'create_category'])->name('create_cat');
 
 Route::post('/admin/create_product', [App\Http\Controllers\AdminController::class, 'create_product'])->name('create_prod');
