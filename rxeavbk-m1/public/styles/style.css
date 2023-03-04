@@ -46,6 +46,18 @@ body{
     color: #14b7db;
 }
 
+#sort
+{
+    color: #F89C21;
+    background-color:black;
+    font-size:15px;
+
+}
+
+#sort:hover{
+    color: #14b7db;
+}
+
 #category
 {
     color: #F89C21;
@@ -351,10 +363,73 @@ body{
 }
 
 .admincontainer p{
+    background: white;
+    color: black;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.delcat{
+    display: flex;
+    margin-right: 100px;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.b1{
     background: black;
     color: #F89C21;
-    height: 25px;
-    width: 150px;
     text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
 }
+
+.b1:hover{
+    color: #14b7db;
+
+}
+
+.b2{
+    background: black;
+    color: #F89C21;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.b2:hover{
+    color: #14b7db;
+
+}
+
+.b3{
+    background: black;
+    color: #F89C21;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.b3:hover{
+    color: #14b7db;
+
+}
+
 /*admin.blade*/
+
+/*red_tov.blade*/
+
+    .button_red{
+        background: black;
+        color: #F89C21;
+        border-radius: 5px;
+    }
+
+    .button_red:hover{
+        color: #14b7db;
+    }
+
+/*red_tov.blade*/
+

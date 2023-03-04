@@ -42,8 +42,6 @@
 
             </div>
 
-            @if($carts->count() > 0)<a href="/public/cart/pay/{{$carts[0]->id_buscet}}">Оформить</a>@endif
-
     </div>
 
 @endsection

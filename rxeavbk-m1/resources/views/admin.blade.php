@@ -5,9 +5,7 @@
 
     @if ( Auth::user()->role == 2 )
 
-        <div class="adminka">
-            <a href="/admin">adminka</a>
-        </div>
+
 
             <div class="admincontainer">
 
@@ -17,7 +15,7 @@
 
                         <form action="/public/admin/create_category" method="post" enctype="multipart/form-data">@csrf
                             <input type="text" class="form-control" placeholder="name" name="name" required>
-                            <input type="submit">
+                            <input type="submit" class="b1">
                         </form>
 
                     </div>
@@ -27,11 +25,11 @@
                     <div class="delcat">
 
                         @foreach($category as $c)
-                            <p>{{$c->name}}</p><a href="/public/admin/delete/{{$c->id}}">Удалить</a>
+                            <p>{{$c->name}}</p><a href="/public/admin/delete/{{$c->id}}"><button class="b2">Удалить</button></a>
                         @endforeach
 
                     </div>
-                    
+
                 <h2>Добавить товар</h2>
 
                     <div class="input-group mb-3">
@@ -45,26 +43,26 @@
                             <input type="text" class="form-control" placeholder="model" name="model" required>
                             <input type="text" class="form-control" placeholder="count" name="count" required>
                             <input type="text" class="form-control" placeholder="id_cat" name="id_cat" required>
-                            <input type="submit">
+                            <input type="submit" class="b1">
                         </form>
 
                     </div>
 
-                        
 
-                        <h2>Товар</h2>
+
+                        <h2>Редактирование и удаление товара</h2>
 
                     <div class="delpro">
 
                         @foreach($product as $p)
-                            <p>{{$p->name}}</p><a href="/public/admin/deletep/{{$p->id}}">Удалить</a>
+                            <p>{{$p->name}}</p><a href="/public/admin/deletep/{{$p->id}}"><button class="b3">Удалить</button></a>
 
-                            <a href="/public/admin/redtov/{{$p->id}}">Редактировать</a>
+                            <a href="/public/admin/redtov/{{$p->id}}"><button class="b3">Редактировать</button></a>
                         @endforeach
 
                     </div>
 
-                    
+
             </div>
 
     @endif

@@ -53,6 +53,6 @@
         <input type="text" class="form-control" placeholder="model" name="model" value="{{$product->model}}" required>
         <input type="text" class="form-control" placeholder="count" name="count" value="{{$product->count}}" required>
         <input type="text" class="form-control" placeholder="id_cat" name="id_cat" value="{{$product->id_cat}}" required>
-        <input type="submit">
+        <input type="submit" class="button_red">
     </form>
 @endsection
