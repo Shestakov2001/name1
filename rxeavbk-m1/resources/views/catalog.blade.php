@@ -14,8 +14,8 @@
                                 <option value ="year">Год</option>
                             </select>
                             <select name="sort" id="filter" class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                <option value="bol">По убыванию</option>
-                                <option value="men">По возрастанию</option>
+                                <option value="asc">По убыванию</option>
+                                <option value="desc">По возрастанию</option>
                             </select>
                             <select name="category" id="category">
                                 <option value ="all">Все</option>

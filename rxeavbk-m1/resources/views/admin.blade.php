@@ -36,7 +36,7 @@
 
                         <form action="/public/admin/create_product" method="post" enctype="multipart/form-data">@csrf
                             <input type="text" class="form-control" placeholder="name" name="name" required>
-                            <input type="text" class="form-control" placeholder="photo" name="photo" required>
+                            <input type="file" class="form-control" placeholder="photo" name="photo" required>
                             <input type="text" class="form-control" placeholder="price" name="price" required>
                             <input type="text" class="form-control" placeholder="year" name="year" required>
                             <input type="text" class="form-control" placeholder="country" name="country" required>

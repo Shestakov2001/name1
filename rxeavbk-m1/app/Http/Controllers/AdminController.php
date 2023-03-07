@@ -31,9 +31,12 @@ class AdminController extends Controller
     }
 
     public function create_product(Request $req){
+        $file = $req->file('photo');
+        $filename =$file->getClientOriginalName();
+        $file->move(public_path('img'),$filename);
         $product = new Product();
         $product -> name = $req -> name;
-        $product -> photo = $req -> photo;
+        $product -> photo = $filename;
         $product -> price = $req -> price;
         $product -> year = $req -> year;
         $product -> country = $req -> country;

@@ -48,5 +48,9 @@ class ProductController extends Controller
         return view("product",["product"=>$product]);
     }
 
-
+    public function cart($id)
+    {
+        $product = \App\Models\Product::find($id);
+        return view("product",["product"=>$product]);
+    }
 }
