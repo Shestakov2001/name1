@@ -33,13 +33,23 @@ body{
 }
 
 /*catalog.blade*/
+.knopks{
+    display: flex;
+    justify-content: space-around;
+}
+
+.knopk{
+    display: flex;
+    justify-content: space-around;
+}
 
 #filter
 {
     color: #F89C21;
     background-color:black;
     font-size:15px;
-
+    width: 200px;
+    height: 30px;
 }
 
 #filter:hover{
@@ -149,6 +159,21 @@ body{
 
 .col-lg-4{
     background: white;
+}
+
+.btn{
+    background: black!important;
+    color: #F89C21!important;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    color: #14b7db!important;
+}
+
+.otpr{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /*home.blade*/

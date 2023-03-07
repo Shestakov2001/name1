@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 class CartController extends Controller
 {
     public function show(){
-        $carts = \App\Models\Cart::where('id_user', Auth::user()->id)->get();
+        $carts = \App\Models\Cart::where('id_user', Auth::user()->id)->where('status', 'Корзина')->get();
             return view("cart",["carts"=>$carts]);
     }
 
@@ -33,7 +33,7 @@ class CartController extends Controller
             $bufferif[0] -> save();
         }
 
-        return redirect('/product/'.$id);
+        return redirect('/catalog/');
     }
 
     public function plus($id){

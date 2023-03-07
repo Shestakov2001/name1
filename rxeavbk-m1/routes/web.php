@@ -20,6 +20,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/home/accept', [App\Http\Controllers\HomeController::class, 'accept'])->name('accept');
+
 Route::get('/catalog', [App\Http\Controllers\ProductController::class, 'index']);
 
 Route::get('/product/{id}', [App\Http\Controllers\ProductController::class, 'product']);

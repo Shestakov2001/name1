@@ -41,7 +41,7 @@
             @endforeach
 
             </div>
-
+            <a href="/public/home" class="btn">Оформить</a>
     </div>
 
 @endsection

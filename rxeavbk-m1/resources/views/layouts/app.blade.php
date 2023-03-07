@@ -67,6 +67,8 @@
 
                                 <a href="/public/cart" class="dropdown-item">Корзина</a>
 
+                                <a href="/public/home" class="dropdown-item">Личный кабинет</a>
+
                                 @if ( Auth::user()->role == 2 )
 
                                     <a href="/public/admin" class="dropdown-item">Админка</a>

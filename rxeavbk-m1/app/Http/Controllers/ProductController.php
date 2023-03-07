@@ -7,30 +7,36 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index(Request $req)
-
     {
         if($req->filter == null)
-
         {
             $products = \App\Models\Product::all();
         }
-
         else
-
         {
             if($req->category == "all")
             {
-                $products = \App\Models\Product::orderBy($req->filter,"desc")->get();
+                if($req->sort == "bol")
+                {
+                    $products = \App\Models\Product::orderBy($req->filter,"desc")->get();
+                }
+                elseif($req->sort == "men")
+                {
+                    $products = \App\Models\Product::orderBy($req->filter,"asc")->get();
+                }
             }
-
             else
-
             {
-                $products = \App\Models\Product::orderBy($req->filter,"desc")->where('id_cat', $req->category)->get();
+                if($req->sort == "bol")
+                {
+                    $products = \App\Models\Product::orderBy($req->filter,"desc")->where('id_cat', $req->category)->get();
+                }
+                elseif($req->sort == "men")
+                {
+                    $products = \App\Models\Product::orderBy($req->filter,"asc")->where('id_cat', $req->category)->get();
+                }
             }
-
         }
-
         $category = \App\Models\Category::all();
         return view("catalog", ["products"=>$products ,"category"=>$category]);
     }
@@ -41,35 +47,6 @@ class ProductController extends Controller
         $product = \App\Models\Product::find($id);
         return view("product",["product"=>$product]);
     }
-
-    public function show(Request $req)
-
-    {
-
-        if($req->filter == null)
-
-            {
-                $products = \App\Models\Product::where("count", "!=", null)->get();
-            }
-
-        else
-            {
-                if($req->sort == "bol")
-
-                {
-                    $products = \App\Models\Product::orderBy($req->filter,"desc")->where('id_cat', $req->category)->get();
-                }
-
-                elseif($req->sort == "men")
-
-                {
-                    $products = \App\Models\Product::orderBy($req->filter,"asc")->where('id_cat', $req->category)->get();
-                }
-            }
-
-
-    }
-
 
 
 }
