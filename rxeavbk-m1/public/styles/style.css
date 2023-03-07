@@ -176,6 +176,20 @@ body{
     padding-bottom: 10px;
 }
 
+.btn1{
+    border-radius: 5px;
+    background: black!important;
+    color: #F89C21!important;
+    height: 35px;
+}
+
+.pole{
+    border: solid #14b7db;
+    background-color: #b1e064;
+    height: 35px;
+    border-radius: 5px;
+}
+
 /*home.blade*/
 
 /*app.blade*/

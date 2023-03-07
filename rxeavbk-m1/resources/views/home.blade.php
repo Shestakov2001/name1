@@ -43,8 +43,8 @@
             </div>
 
                 <form class="otpr" action="/public/home/accept" method="get">
-                <input type="text" name="password">
-                <button type="submit">Отправить</button>
+                <input  class="pole" type="text" name="password">
+                <button class="btn1" type="submit">Отправить</button>
                 </form>
     </div>
     <div class="container">

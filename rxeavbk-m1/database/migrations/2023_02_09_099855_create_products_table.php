@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('country');
             $table->string('model');
             $table->integer('count');
-            $table->integer('id_cat');
+            $table->foreignid('id_cat')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }
